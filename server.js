@@ -58,5 +58,5 @@ app.post(`/${config.postPath}`, (req, res) => {
 })
 
 app.listen(config.port, () => {
-  console.log(`Example app listening at http://localhost:${config.port}`)
+  console.log(`App listening at http://localhost:${config.port}`)
 })

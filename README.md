@@ -12,6 +12,6 @@ The config has a `cmd` property for each repo which allows you to set whatever d
 * Go to https://github.com/your/repo-url and click settings -> webhooks -> add webhook
 * Set the payload url to be http://example.com:port/postPathFromConfig (post path should be unguessable)
 * Just the push event, and then add webook
-* `node server.js` (or use forever or nodemon to keep it up in case of crash)
+* `npm start` (or use forever or nodemon to keep it up in case of crash)
 * Test by pushing up a commit to the main branch
 * See the log at http://example.com.com:port
