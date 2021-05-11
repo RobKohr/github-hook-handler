@@ -1,7 +1,8 @@
 # github-hook-handler
 
-This will run on the same server as your production repo. When a push happens on github, this
-will run terminal commands, with the goal of updating your repo to the latest from github. 
+Purpose: keep a production server up to date with a git repo branch. Ideal for react app builds, but really could be used for anything.
+
+The config has a `cmd` property for each repo which allows you to set whatever deployment commands you want for each individual repo (or even each repo:branch)
 
 
 * `npm install`
@@ -9,8 +10,8 @@ will run terminal commands, with the goal of updating your repo to the latest fr
 * Setup your git repo somewhere else on the server
 * update the values in local.config.js
 * Go to https://github.com/your/repo-url and click settings -> webhooks -> add webhook
-* Set the payload url to be http://github-hook-handler-server-url.com:port/postPathFromConfig
+* Set the payload url to be http://example.com:port/postPathFromConfig (post path should be unguessable)
 * Just the push event, and then add webook
 * `node server.js` (or use forever or nodemon to keep it up in case of crash)
 * Test by pushing up a commit to the main branch
-* See the log at http://github-hook-handler-server-url.com:port
+* See the log at http://example.com.com:port
