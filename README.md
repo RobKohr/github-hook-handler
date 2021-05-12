@@ -1,6 +1,6 @@
 # github-hook-handler
 
-Purpose: keep a production server up to date with a git repo branch. Ideal for react app builds, but really could be used for anything.
+Purpose: keep a production server up to date with github repo branches. Ideal for react app builds, but really could be used for anything.
 
 The config has a `cmd` property for each repo which allows you to set whatever deployment commands you want for each individual repo (or even each repo:branch)
 
